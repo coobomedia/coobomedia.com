@@ -1,0 +1,362 @@
+.simpay-form-control {
+	margin-bottom: 15px;
+
+	@at-root fieldset#{&} {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		border: 0;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style-type: none;
+			margin: 10px 0 0;
+
+			label {
+				line-height: 1;
+				display: flex;
+				align-items: center;
+				margin: 0 0 0.75em 0;
+
+				input[type="radio"],
+				input[type="checkbox"] {
+					margin: 0 0.5em 0 0;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.StripeElement.simpay-p24-wrap,
+	.StripeElement.simpay-fpx-wrap,
+	.StripeElement.simpay-ideal-wrap {
+		padding: 0 !important;
+	}
+
+	.simpay-styled & {
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		legend,
+		label {
+			font-weight: 600;
+			cursor: pointer;
+			margin-bottom: 5px;
+			display: inline-block;
+		}
+
+		legend {
+			display: block;
+		}
+
+		.simpay-optional-indicator {
+			font-weight: normal;
+			font-size: 90%;
+			opacity: 0.80;
+		}
+
+		p {
+			font-weight: 500;
+			margin: 0;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		label,
+		legend {
+			color: $base-text-color;
+			font-family: $base-font;
+			font-size: 15px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			font-weight: 600;
+		}
+
+		h6 {
+			font-size: 100%;
+		}
+
+		h5 {
+			font-size: 115%;
+		}
+
+		h4 {
+			font-size: 125%;
+		}
+
+		h3 {
+			font-size: 150%;
+		}
+
+		h2 {
+			font-size: 160%;
+		}
+
+		h1 {
+			font-size: 175%;
+		}
+
+		input[type="date"],
+		input[type="time"],
+		input[type="datetime-local"],
+		input[type="week"],
+		input[type="month"],
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="number"],
+		select,
+		textarea,
+		.simpay-sepa-debit-wrap,
+		.simpay-p24-wrap,
+		.simpay-fpx-wrap,
+		.simpay-ideal-wrap,
+		.simpay-card-wrap {
+			font-family: $base-font;
+			font-size: 15px;
+			font-weight: normal;
+			color: $input-text-color;
+
+			margin: 0 1px !important;
+			padding: 0.4375em !important;
+			background: #fff;
+			border: 0;
+			box-shadow:
+				0 0 0 1px $input-border-color,
+				0 1px 2px rgba(0, 0, 0, 0.05);
+			border-radius: 4px;
+			height: $input-height;
+			min-height: $input-height;
+			line-height: 1;
+			width: 100%;
+			box-sizing: border-box;
+			appearance: none;
+
+			&::placeholder {
+				color: $input-placeholder-color;
+			}
+
+			&:focus {
+				background-color: #fff;
+				box-shadow:
+					0 0 0 1px $input-focus-border-color,
+					0 0 0 3px rgba($input-focus-border-color, 0.15),
+					0 1px 2px rgba(0, 0, 0, 0.05);
+				outline: 0;
+				line-height: 1;
+			}
+
+			// Set border color of invalid inputs.
+			&.simpay-input-error {
+				box-shadow:
+					0 0 0 1px $error-text-color,
+					0 0 0 3px rgba($error-text-color, 0.15),
+					0 1px 2px rgba(0, 0, 0, 0.05);
+			}
+		}
+
+		.simpay-ach-debit-wrap {
+			margin-top: 15px;
+		}
+
+		.simpay-p24-wrap,
+		.simpay-ideal-wrap {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+		.StripeElement--webkit-autofill {
+			background: transparent !important;
+		}
+
+		textarea {
+			height: auto;
+		}
+
+		input[type="radio"],
+		input[type="checkbox"] {
+			cursor: pointer;
+			line-height: 0;
+			color: #50575e;
+			text-align: center;
+			vertical-align: middle;
+			margin: 0 8px 0 0 !important;
+			padding: 0 !important;
+			width: 16px;
+			min-width: 1px;
+			height: 16px;
+			flex-shrink: 0;
+			outline: 0;
+			background: #fff;
+			border: 0;
+			box-shadow:
+				0 0 0 1px $input-border-color,
+				0 1px 2px rgba(0, 0, 0, 0.05);
+			border-radius: 4px;
+			position: relative;
+			clear: none;
+			display: inline-block;
+			appearance: none;
+			transition: 0.05s border-color ease-in-out;
+
+			&:focus {
+				outline: 0;
+				appearance: none;
+				box-shadow:
+					0 0 0 1px $input-focus-border-color,
+					0 0 0 3px rgba($input-focus-border-color, 0.15),
+					0 1px 2px rgba(0, 0, 0, 0.05);
+			}
+
+			&:before,
+			&:checked:before {
+				content: '';
+			}
+
+			&:checked:after {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				border: 0;
+				transform: none;
+			}
+		}
+
+		input[type="checkbox"] {
+
+			&:checked:after {
+				content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E");
+				width: 22px;
+				height: 22px;
+				top: -2px;
+				left: -4px;
+			}
+		}
+
+		input[type="radio"] {
+			border-radius: 50%;
+
+			&:checked:after {
+				content: '';
+				width: 10px;
+				height: 10px;
+				top: 3px;
+				left: 3px;
+				background: $input-focus-border-color;
+				border-radius: 50%;
+			}
+		}
+
+		select,
+		select:-webkit-autofill {
+			line-height: initial;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			appearance: none;
+			background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%2332325d%22%2F%3E%3C%2Fsvg%3E");
+			background-position: calc(100% - 8px);
+			background-size: 16px 16px;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			padding-right: 30px !important;
+			max-width: 100%;
+		}
+
+		.simpay-sepa-debit-wrap.StripeElement,
+		.simpay-p24-wrap.StripeElement,
+		.simpay-fpx-wrap.StripeElement,
+		.simpay-ideal-wrap.StripeElement,
+		.simpay-card-wrap.StripeElement {
+			display: flex;
+			align-items: center;
+
+			> div {
+				flex: 1;
+			}
+		}
+
+		.simpay-sepa-debit-wrap.StripeElement--focus,
+		.simpay-p24-wrap.StripeElement--focus,
+		.simpay-fpx-wrap.StripeElement--focus,
+		.simpay-ideal-wrap.StripeElement--focus,
+		.simpay-card-wrap.StripeElement--focus {
+			box-shadow:
+				0 0 0 1px $input-focus-border-color,
+				0 0 0 3px rgba($input-focus-border-color, 0.15),
+				0 1px 2px rgba(0, 0, 0, 0.05);
+			color: $input-text-color;
+		}
+
+		.simpay-sepa-debit-wrap.StripeElement--invalid,
+		.simpay-p24-wrap.StripeElement--invalid,
+		.simpay-fpx-wrap.StripeElement--invalid,
+		.simpay-ideal-wrap.StripeElement--invalid,
+		.simpay-card-wrap.StripeElement--invalid {
+			box-shadow:
+				0 0 0 1px $error-text-color,
+				0 0 0 2px rgba($error-text-color, 0.15),
+				0 1px 2px rgba(0, 0, 0, 0.05);
+		}
+
+		.simpay-label-wrap {
+			font-weight: 600;
+		}
+	}
+}
+
+.simpay-form-control__description {
+
+	.simpay-styled & {
+
+		p {
+			font-size: 90%;
+			font-weight: normal;
+			margin: 0.5rem 0 0;
+			opacity: 0.80;
+		}
+	}
+}
+
+.simpay-payment-method-toggle {
+
+	.simpay-styled & {
+
+		svg {
+			display: block;
+			border-radius: 3px;
+			margin-bottom: 6px;
+			width: 18px;
+			height: 18px;
+		}
+	}
+}

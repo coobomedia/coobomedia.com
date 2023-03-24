@@ -1,0 +1,83 @@
+.simpay-form-tabs {
+
+	.simpay-styled & {
+
+	}
+}
+
+.simpay-form-tabs .simpay-form-tabs-toggles {
+	margin: 0 0 15px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&__toggle {
+		margin-right: 10px;
+	}
+
+	.simpay-styled .simpay-form-control & {
+		box-shadow: inset 0 -1px $input-border-color;
+
+		&__toggle {
+			cursor: pointer;
+			color: $input-text-color;
+			font-family: $base-font;
+			font-weight: bold;
+			font-size: 15px;
+			text-transform: none;
+			margin: 0 10px;
+			padding: 10px 5px 10px;
+			background-color: transparent;
+			background-image: none;
+			border-radius: 0;
+			border: 0;
+
+			&.is-active {
+				box-shadow: inset 0 -2px #308264;
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:active,
+			&:focus,
+			&:hover {
+				background: none;
+				border-radius: 0;
+				border: 0;
+			}
+
+			&:hover,
+			&.is-active:focus,
+			&:focus {
+				text-decoration: none;
+				box-shadow: inset 0 -4px #308264;
+				outline: 0;
+			}
+		}
+
+		~ [role="tabpanel"] {
+			position: relative;
+
+			&:after {
+				position: absolute;
+				width: calc(100% + 10px);
+				height: calc(100% + 10px);
+				left: -5px;
+				top: -5px;
+				border-radius: 4px;
+				content: '';
+				z-index: -1;
+			}
+
+			&:focus {
+				outline: 0;
+
+				&:after {
+					box-shadow: 0 0 0 2px $input-focus-border-color;
+				}
+			}
+		}
+	}
+}

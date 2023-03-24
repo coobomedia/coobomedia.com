@@ -1,0 +1,106 @@
+.simpay-multi-plan-radio-group {
+
+	.simpay-styled & {
+
+		label {
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: normal;
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+}
+
+.simpay-multi-plan-list-group,
+.simpay-multi-plan-buttons-group {
+
+	.simpay-styled & {
+
+		input[type="radio"] {
+			position: absolute;
+			left: -9999em;
+		}
+
+		label {
+			color: $input-text-color;
+			font-family: $base-font;
+			font-weight: 600 !important;
+			font-size: 15px;
+			background: #fff;
+			border-radius: 4px;
+			box-shadow:
+				0 0 0 1px $input-border-color,
+				0 1px 2px rgba(0, 0, 0, 0.05);
+			padding: 14px;
+			display: block;
+			position: relative;
+		}
+
+		input:disabled + label {
+			opacity: 0.70;
+		}
+
+		input[type="radio"]:focus + label {
+			box-shadow: 0 0 0 1px $input-focus-border-color;
+		}
+
+		input[type="radio"]:checked + label {
+			box-shadow:
+				0 0 0 1px $input-focus-border-color,
+				0 0 0 3px rgba($input-focus-border-color, 0.15),
+				0 1px 2px rgba(0, 0, 0, 0.05);
+
+			svg {
+				stroke: $input-focus-border-color;
+				display: block;
+			}
+		}
+	}
+}
+
+.simpay-multi-plan-list-group {
+
+	.simpay-styled & {
+
+		label {
+			line-height: normal;
+			padding-right: 50px;
+		}
+
+		small {
+			font-weight: normal;
+			font-size: 13px;
+			display: block;
+			margin-top: 5px;
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			fill: none;
+			position: absolute;
+			right: 14px;
+			top: 50%;
+			transform: translate3d(0, -50%, 0);
+			display: none;
+		}
+	}
+
+}
+
+.simpay-multi-plan-buttons-group {
+
+	.simpay-styled & {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: -10px;
+
+		li {
+			text-align: center;
+			margin: 0 0 10px;
+			width: calc(50% - 5px);
+		}
+	}
+}

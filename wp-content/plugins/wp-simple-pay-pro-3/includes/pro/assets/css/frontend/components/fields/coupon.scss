@@ -1,0 +1,53 @@
+.simpay-coupon-container {
+
+	.simpay-coupon-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.simpay-coupon-field {
+		flex: 1;
+	}
+
+	.simpay-btn.simpay-apply-coupon {
+		margin-left: 10px;
+	}
+
+	.simpay-coupon-loading,
+	.simpay-coupon-message {
+		display: inline-block;
+		margin-top: 5px;
+	}
+
+	.simpay-field-error,
+	.simpay-field-error label.error {
+		display: block;
+		font-weight: normal;
+	}
+
+	.simpay-styled & {
+
+		.simpay-btn.simpay-apply-coupon {
+			background-color: #767676;
+			max-width: 110px;
+			margin-left: 10px;
+
+			&:focus,
+			&:hover {
+				background-color: #666;
+			}
+
+			&:focus {
+				box-shadow:
+					0 0 0 1px #fff,
+					0 0 0 3px #767676;
+			}
+		}
+
+		.simpay-field-error,
+		.simpay-field-error label.error {
+			color: $error-text-color;
+		}
+	}
+}

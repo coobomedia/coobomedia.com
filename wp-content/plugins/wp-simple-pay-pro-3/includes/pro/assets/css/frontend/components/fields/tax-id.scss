@@ -1,0 +1,15 @@
+.simpay-tax-id-field {
+
+	.simpay-styled & {
+		display: flex;
+		justify-content: space-between;
+
+		select {
+			width: 48%;
+		}
+
+		input[type="text"] {
+			width: 48%;
+		}
+	}
+}

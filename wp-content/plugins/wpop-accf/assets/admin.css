@@ -1,0 +1,156 @@
+
+div#accf7-settings {
+    margin-top: 30px;
+    width: 98%;
+}
+.clear {
+    clear: both;
+}
+#accf7-settings .fleft{
+    float: left;
+}
+#accf7-settings em{
+    display: block;
+    padding-left: 5px;
+}
+#accf7-settings label{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Tabs */
+
+
+#accf7-settings .accf7-settings-tab {
+    display: block;
+}
+
+#accf7-settings .accf7-settings-tab ul {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+#accf7-settings .accf7-settings-tab ul li {
+    border: 1px solid #e2e2e2;
+    border-width: 1px 1px 0;
+    margin: 0 3px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    background-color: #d5d5d5;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+#accf7-settings .accf7-settings-tab ul li.active {
+    background-color: #fff;
+}
+
+#accf7-settings .tab-pane {
+    padding: 30px 20px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-width: 0 1px 1px;
+}
+
+
+
+#accf7-settings input[type=text],
+#accf7-settings input[type=number],
+#accf7-settings select,
+#accf7-settings textarea {
+    height: initial;
+    margin: 5px;
+    padding: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 150px;
+}
+
+#accf7-settings input[type=number] {
+    width: 90px;
+    text-align: center;
+    min-width: initial;
+}
+
+#accf7-settings input[type=radio],
+#accf7-settings input[type=checkbox] {
+    min-width: initial;
+    width: 25px;
+    height: 25px;
+}
+
+#accf7-settings input[type=checkbox]:checked:before {
+    margin: 0;
+}
+
+.accf7-auto-settings .products-meta-section-wrapper h3 {
+    margin: 0 0 10px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.accf7-main-settings .general-settings-section{
+    float: left;
+    width: 46%;
+}
+
+#accf7-settings .delet-btn{
+    padding-top: 25px;
+}
+#accf7-settings .delet-btn .button {
+    background: #c52929;
+    color: #fff;
+    border-color: #c52929;
+}
+#accf7-settings .delet-btn .button:hover {
+    background: #f30505;
+    color: #fff;
+    border-color: #f30505;
+}
+#accf7-settings .add-button{
+    display: block;
+    clear: both;
+    padding-top: 24px;
+}
+#accf7-settings .add-button .button{
+    background: #0085ba;
+    color: #fff;
+    border-color: #0085ba;
+}
+#accf7-settings .add-button .button:hover{
+    background: #00b1f7;
+    color: #fff;
+    border-color: #00b1f7;
+}
+#accf7-settings .contact-title{
+    padding-top: 12px;
+}
+#accf7-settings .single-contact, .single-section-title{
+    display: inline-block;
+    width: 100%;
+    padding-top: 12px;
+}
+#accf7-settings .form-fields{
+    display: inline-block;
+    width: 96%;
+}
+#accf7-settings .form-fields label {
+    width: 26%;
+    padding-top: 13px;
+    padding-right: 25px;
+}
+
+.pro{
+    color: red;
+}

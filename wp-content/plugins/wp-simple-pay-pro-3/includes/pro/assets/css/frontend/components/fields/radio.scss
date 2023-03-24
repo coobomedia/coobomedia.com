@@ -1,0 +1,26 @@
+.simpay-radio-container {
+
+	.simpay-styled & {
+		margin-bottom: 15px !important;
+		background: none;
+
+		ul {
+			margin: 0 !important;
+		}
+
+		legend {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			background: none;
+		}
+
+		label {
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: normal;
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+}

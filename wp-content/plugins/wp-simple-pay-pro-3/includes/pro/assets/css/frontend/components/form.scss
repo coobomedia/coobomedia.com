@@ -1,0 +1,80 @@
+.simpay-checkout-form--stripe_checkout-styled,
+.simpay-checkout-form--overlay,
+.simpay-checkout-form--embedded {
+
+	&.simpay-styled {
+		font-family: $base-font;
+		font-size: 15px;
+		font-weight: normal;
+		color: $base-text-color;
+		line-height: normal;
+		letter-spacing: normal;
+
+		a {
+			color: $input-focus-border-color;
+			border-bottom-color: currentColor;
+			box-shadow: none;
+
+			&:hover {
+				color: darken($input-focus-border-color, 5);
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.simpay-checkout-form--overlay {
+
+	&.simpay-styled {
+		margin-top: 1.5rem;
+	}
+}
+
+.simpay-checkout-form--stripe_checkout-styled,
+.simpay-checkout-form--embedded {
+
+	&.simpay-styled {
+		max-width: 400px;
+	}
+}
+
+.simpay-embedded-heading {
+
+	&.simpay-styled {
+		margin: 0 0 1.5rem;
+
+		.simpay-form-title,
+		.simpay-form-description {
+			text-align: left;
+		}
+	}
+}
+
+.simpay-form-title,
+.simpay-form-description {
+
+	.simpay-styled & {
+		color: $base-text-color;
+		font-family: $base-font;
+		text-align: center;
+	}
+}
+
+.simpay-form-title {
+
+	.simpay-styled & {
+		font-size: 28px;
+		font-weight: bold;
+		line-height: initial;
+		margin: 0 !important;
+	}
+}
+
+.simpay-form-description {
+
+	.simpay-styled & {
+		font-size: 16px;
+		color: #666;
+		margin: 0;
+	}
+}

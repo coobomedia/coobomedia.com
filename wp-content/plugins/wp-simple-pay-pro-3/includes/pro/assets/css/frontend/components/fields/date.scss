@@ -1,0 +1,16 @@
+// Pull from admin.
+@import "./../../../admin/datepicker.scss";
+
+.ui-datepicker {
+	display: none;
+}
+
+.simpay-datepicker {
+	box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.20), 0 1px 2px rgb(0, 0, 0, 0.5);
+	border: 0;
+	overflow: hidden;
+
+	th {
+		border: 0;
+	}
+}

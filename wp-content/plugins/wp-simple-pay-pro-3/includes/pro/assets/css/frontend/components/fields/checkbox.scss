@@ -1,0 +1,24 @@
+.simpay-form-control {
+
+	.simpay-checkbox-wrap {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.simpay-styled & {
+
+		.simpay-checkbox-wrap {
+
+			input[type="checkbox"] {
+				margin-top: 1px;
+				flex-shrink: 0;
+			}
+
+			label {
+				font-size: 14px;
+				font-weight: normal;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.simpay-total-amount-value {
+	font-style: normal;
+}
+
+.simpay-amounts-container {
+
+	.simpay-styled & {
+
+		> div {
+			padding: 7px 0;
+		}
+
+		p {
+			font-weight:  bold;
+			display: flex;
+			justify-content: space-between;
+
+			span {
+				max-width: 40%;
+				text-align: right;
+			}
+		}
+	}
+}
+
+.simpay-coupon-amount-container,
+.simpay-tax-amount-container {
+
+	.simpay-styled & {
+		border: 1px solid $input-border-color;
+		border-width: 1px 0;
+		padding: 7px 0;
+
+		span {
+			font-weight: normal;
+		}
+	}
+}
+
+p.simpay-automatic-tax-label {
+
+	.simpay-styled & {
+
+		.simpay-tax-amount-value {
+			font-size: 90%;
+			max-width: 70%;
+
+			&.is-invalid {
+				color: $error-text-color;
+			}
+		}
+	}
+}
+
+div.simpay-coupon-amount-container {
+
+	.simpay-styled & {
+		margin-bottom: -1px;
+	}
+}

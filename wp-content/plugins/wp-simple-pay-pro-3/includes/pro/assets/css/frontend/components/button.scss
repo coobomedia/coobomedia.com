@@ -1,0 +1,90 @@
+@mixin btn {
+	text-decoration: none;
+	text-align: center;
+	font-family: $base-font;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: normal;
+	background-color: $color-primary;
+	background-image: none;
+	display: block;
+	height: $input-height;
+	line-height: $line-height;
+	width: 100%;
+	margin: 0;
+	padding: 6px 10px;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	&:hover {
+		text-decoration: none;
+		background-color: darken($color-primary, 2);
+		background-image: none;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+	&:disabled {
+		pointer-events: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+		background-color: darken($color-primary, 2);
+		box-shadow:
+			0 0 0 1px #fff,
+			0 0 0 3px rgba($color-primary, 0.50);
+	}
+
+	&.simpay-disabled {
+		background-color: #aab7c4;
+	}
+}
+
+.simpay-btn:not(.stripe-button-el) {
+
+	.simpay-styled & {
+
+		@include btn;
+	}
+}
+
+// Backwards compatibility selector level.
+.simpay-form-control {
+
+	.simpay-styled & {
+
+		.simpay-btn:not(.stripe-button-el) {
+
+			@include btn;
+		}
+
+		.simpay-btn.simpay-bank-btn:not(.stripe-button-el) {
+			background-color: #767676;
+
+			&:focus,
+			&:hover {
+				background-color: #666;
+			}
+
+			&:focus {
+				box-shadow:
+					0 0 0 1px #fff,
+					0 0 0 3px #767676;
+			}
+		}
+
+		.simpay-btn.simpay-bank-btn:not(.stripe-button-el),
+		.simpay-btn.simpay-payment-btn:not(.stripe-button-el),
+		.simpay-btn.simpay-checkout-btn:not(.stripe-button-el) {
+			height: 40px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+	}
+}

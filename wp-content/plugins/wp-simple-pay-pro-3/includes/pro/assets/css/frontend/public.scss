@@ -1,0 +1,35 @@
+$base-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$base-text-color: #333;
+$error-text-color: #eb1c26;
+$line-height: 1.5;
+$input-height: 34px;
+$input-text-color: $base-text-color;
+$input-placeholder-color: #c7c7c7;
+$input-border-color: rgba(0, 0, 0, 0.20);
+$input-focus-border-color: #007acc;
+
+$color-primary: #0F8569;
+
+// Form.
+@import "./components/button.scss";
+@import "./components/form.scss";
+@import "./components/form-control.scss";
+@import "./components/form-tabs.scss";
+
+// Overlay.
+@import "./components/overlay.scss";
+
+// Components.
+@import "./components/update-payment-method.scss";
+@import "./components/fields/checkbox.scss";
+@import "./components/fields/radio.scss";
+@import "./components/fields/coupon.scss";
+@import "./components/fields/total-amount-labels.scss";
+@import "./components/fields/custom-amount.scss";
+@import "./components/fields/payment-request-button.scss";
+@import "./components/fields/address.scss";
+@import "./components/fields/price-select.scss";
+@import "./components/fields/payment-methods.scss";
+@import "./components/fields/tax-id.scss";
+@import "./components/fields/date.scss";
+@import "./components/fields/email-verification.scss";
